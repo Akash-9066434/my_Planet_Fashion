@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <style>
+        body {
+            font-family: 'Dancing Script', cursive;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-image: url('https://i.ibb.co/gRtLbcm/istockphoto-114283644-1024x1024.jpg');
+            background-size: 100% 100%; 
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+			 
+        }
+
+        header {
+            margin: 0;
+            font-size: 48px;
+            letter-spacing: 2px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 78px;
+            letter-spacing: 2px;
+			background-color: rgba(0, 0, 0, 0.6);
+            color: white; /* Change font color to white */
+        }
+
+        nav {
+            background-color: rgba(0, 0, 0, 0.6);
+            text-align: center;
+            padding: 10px 0;
+            margin-bottom: 20px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            padding: 8px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        nav ul li a:hover {
+            background-color: #1abc9c;
+        }
+
+        .about-info {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: rgba(189, 195, 199, 0); /* Increased transparency */
+            border-radius: 10px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .about-info ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .about-info li {
+            font-size: 20px;
+            margin: 15px 0;
+            padding: 10px 15px;
+            background-color: rgba(231, 231, 231, 0.8); /* Increased transparency */
+            border-radius: 5px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Styling for the Team section */
+        .about-info h2 {
+            padding: 10px;
+            background-color: #3498db;
+            color: white;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .team-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 30px;
+        }
+
+        .team-table th, .team-table td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .team-table th {
+            background-color: #3498db;
+            color: white;
+            font-size: 18px;
+        }
+
+        .team-table td {
+            background-color: rgba(231, 231, 231, 0.8); /* Increased transparency */
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        /* Specific styling for Sumit Singh, Rohit Sharma, Priya Verma, and Anjali Gupta */
+        .team-table tr:nth-child(2) td, 
+        .team-table tr:nth-child(3) td,
+        .team-table tr:nth-child(4) td, 
+        .team-table tr:nth-child(5) td {
+            
+        }
+
+        .team-table tr:nth-child(2):hover td, 
+        .team-table tr:nth-child(3):hover td,
+        .team-table tr:nth-child(4):hover td, 
+        .team-table tr:nth-child(5):hover td {
+            background-color: #1abc9c; /* Hover effect with animation */
+            color: #fff;
+        }
+
+        @keyframes highlight {
+            0% { opacity: 0.5; transform: scale(0.9); }
+            100% { opacity: 1; transform: scale(1); }
+        }
+
+        iframe {
+            display: block;
+            margin: 40px auto;
+            border: 5px solid #2c3e50;
+            border-radius: 10px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        footer {
+            background-color: rgba(0, 0, 0, 0.6);
+            color: #ecf0f1;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>About Us</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <section class="about-info">
+        <ul>
+            <li>Founded: 2020</li>
+            <li>Location: Plot No 145, 33A, Mahatma Gandhi Marg, Civil Lines, Prayagraj, Uttar Pradesh 211001</li>
+            <li>Mission: For Future Bright</li>
+        </ul>
+
+        <h2>Our Team</h2>
+        <table class="team-table">
+            <tr>
+                <th>Name</th>
+                <th>Role</th>
+                <th>Experience</th>
+            </tr>
+            <tr>
+                <td>Sumit Singh</td>
+                <td>Founder & CEO</td>
+                <td>10 years</td>
+            </tr>
+            <tr>
+                <td>Rohit Sharma</td>
+                <td>Chief Designer</td>
+                <td>8 years</td>
+            </tr>
+            <tr>
+                <td>Priya Verma</td>
+                <td>Marketing Head</td>
+                <td>7 years</td>
+            </tr>
+            <tr>
+                <td>Anjali Gupta</td>
+                <td>Operations Manager</td>
+                <td>5 years</td>
+            </tr>
+        </table>
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3602.637388266739!2d81.828648075169!3d25.450383821399498!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399acadb03bbcb73%3A0xb7d623a19aa55712!2sPLANET%20FASHION!5e0!3m2!1sen!2sin!4v1724316941055!5m2!1sen!2sin" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Planet Fashion. All rights reserved.</p>
+    </footer>
+</body>
+</html>

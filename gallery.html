@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Planet Fashion</title>
+    <style>
+        body {
+            font-family: 'Dancing Script', cursive;
+            margin: 0;
+            padding: 0;
+            background-color: rgba(0, 0, 0, 0.1);
+            color: #333;
+        }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.4);
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 48px;
+            margin: 0;
+            letter-spacing: 2px;
+        }
+
+        header p {
+            font-size: 20px;
+            margin-top: 10px;
+        }
+
+        nav {
+            background-color: rgba(0, 0, 0, 0.8);
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            padding: 8px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        nav ul li a:hover {
+            background-color: #1abc9c;
+        }
+
+        .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Adjust gap */
+    padding: 20px; /* Adjust padding */
+    max-width: 1200px;
+    margin: auto;
+    justify-content: center;
+}
+
+.gallery-item {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: calc(33.333% - 20px); /* Adjust width for better fit */
+    margin: 10px; /* Decrease margin */
+    transition: transform 0.3s ease;
+    padding: 5px; /* Add padding inside the item */
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    padding: 5px; /* Add padding around images */
+    margin: 0 auto; /* Center the image */
+}
+
+
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item p {
+            padding: 15px;
+            margin: 0;
+            font-size: 18px;
+            background-color: #34495e;
+            color: white;
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.05);
+        }
+
+        .price {
+            font-size: 16px;
+            color: #27ae60;
+        }
+
+        .discount {
+            font-size: 14px;
+            color: #e74c3c;
+        }
+
+        footer {
+            background-color: rgba(0, 0, 0, 0.4); /* Corrected to rgba(0, 0, 0, 0.4) */
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        @media (max-width: 768px) {
+            .gallery-item {
+                width: calc(50% - 20px);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .gallery-item {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Our Gallery</h1>
+        <p>Explore our collection of fashion pieces.</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <section class="gallery">
+        <div class="gallery-item">
+            <img src="https://i.postimg.cc/hG5RzyFs/Whats-App-Image-2024-08-21-at-6-03-38-PM.jpg" alt="Summer Outfits">
+            <p>Summer Outfits</p>
+            <p class="price">Price: ₹1200</p>
+            <p class="discount">Discount: 10%</p>
+        </div>
+        <div class="gallery-item">
+            <img src="https://i.postimg.cc/YS1QjVmK/Whats-App-Image-2024-08-21-at-6-03-38-PM-1.jpg.jpeg" alt="Elegant evening gown">
+            <p>Elegant Evening Gown</p>
+            <p class="price">Price: ₹4500</p>
+            <p class="discount">Discount: 15%</p>
+        </div>
+        <div class="gallery-item">
+            <img src="https://i.postimg.cc/LsRnQshw/Whats-App-Image-2024-08-21-at-6-03-40-PM.jpg" alt="Casual Shirt/Pant Outfit">
+            <p>Casual Shirt/Pant Outfit</p>
+            <p class="price">Price: ₹2000</p>
+            <p class="discount">Discount: 20%</p>
+        </div>
+        <div class="gallery-item">
+            <img src="https://i.postimg.cc/ryvWCMCX/Whats-App-Image-2024-08-21-at-6-03-39-PM-1.jpg.jpeg" alt="Kurtas for Weddings">
+            <p>Kurtas for Weddings</p>
+            <p class="price">Price: ₹3000</p>
+            <p class="discount">Discount: 10%</p>
+        </div>
+        <div class="gallery-item">
+            <img src="https://i.postimg.cc/k5v3wJtj/Whats-App-Image-2024-08-21-at-6-03-41-PM-1.jpg" alt="Formal Shirts">
+            <p>Formal Shirts</p>
+            <p class="price">Price: ₹1600</p>
+            <p class="discount">Discount: 5%</p>
+        </div>
+        <div class="gallery-item">
+            <img src="https://i.postimg.cc/kXzjb0DB/Whats-App-Image-2024-08-21-at-6-03-37-PM-2.jpg.jpeg" alt="Brand Outfit">
+            <p>Brand Outfit</p>
+            <p class="price">Price: ₹5000</p>
+            <p class="discount">Discount: 12%</p>
+        </div>
+        <div class="gallery-item">
+            <img src="https://i.postimg.cc/sf0mkkYw/Whats-App-Image-2024-08-21-at-6-03-41-PM.jpg" alt="Brand Outfit">
+            <p>Brand Outfit</p>
+            <p class="price">Price: ₹5000</p>
+            <p class="discount">Discount: 12%</p>
+        </div>
+        <div class="gallery-item">
+            <img src="https://i.postimg.cc/B6bDNvVs/Whats-App-Image-2024-08-21-at-6-03-39-PM.jpg" alt="Formal Outfit">
+            <p>Formal Outfit</p>
+            <p class="price">Price: ₹3500</p>
+            <p class="discount">Discount: 18%</p>
+        </div>
+        <div class="gallery-item">
+            <img src="https://i.postimg.cc/2ST7xgSQ/Whats-App-Image-2024-08-21-at-6-03-38-PM-2.jpg" alt="Ties/Socks/Handkerchief">
+            <p>Ties/Socks/Handkerchief</p>
+            <p class="price">Price: ₹600</p>
+            <p class="discount">Discount: 8%</p>
+        </div>
+		<div class="gallery-item">
+        <img src="https://i.ibb.co/6ZTSRWJ/zakaria-issaad-o-Usf-Zkfxxg-unsplash.jpg" alt="Fashionable Outfit 1">
+        <p>Fashionable Outfit 1</p>
+        <p class="price">Price: ₹3000</p>
+        <p class="discount">Discount: 15%</p>
+    </div>
+    <div class="gallery-item">
+        <img src="https://i.ibb.co/3N87Fsd/clothes-257103.jpg" alt="Fashionable Outfit 2">
+        <p>Fashionable Outfit 2</p>
+        <p class="price">Price: ₹2500</p>
+        <p class="discount">Discount: 10%</p>
+    </div>
+    <div class="gallery-item">
+        <img src="https://i.ibb.co/zfxm8h8/boutique-8025034.jpg" alt="Fashionable Outfit 3">
+        <p>Fashionable Outfit 3</p>
+        <p class="price">Price: ₹4000</p>
+        <p class="discount">Discount: 20%</p>
+    </div>
+    <div class="gallery-item">
+        <img src="https://i.ibb.co/F3Mr5c7/amir-soltani-XJ5osu-L1z-Fw-unsplash.jpg" alt="Fashionable Outfit 4">
+        <p>Fashionable Outfit 4</p>
+        <p class="price">Price: ₹3500</p>
+        <p class="discount">Discount: 12%</p>
+    </div>
+    <div class="gallery-item">
+        <img src="https://i.ibb.co/Gs3mnnZ/cam-morin-kn-Km7u-7-Ihw-unsplash.jpg" alt="Fashionable Outfit 5">
+        <p>Fashionable Outfit 5</p>
+        <p class="price">Price: ₹4500</p>
+        <p class="discount">Discount: 5%</p>
+    </div>
+    <div class="gallery-item">
+        <img src="https://i.ibb.co/hFmJpnj/s-o-c-i-a-l-c-u-t-7-Kk-Di-Ss5-Ud-Q-unsplash.jpg" alt="Fashionable Outfit 6">
+        <p>Fashionable Outfit 6</p>
+        <p class="price">Price: ₹3200</p>
+        <p class="discount">Discount: 8%</p>
+    </div>
+    <div class="gallery-item">
+        <img src="https://i.ibb.co/TrpG10b/sara-kurfess-5epnzwsphl0-unsplash.jpg" alt="Fashionable Outfit 7">
+        <p>Fashionable Outfit 7</p>
+        <p class="price">Price: ₹2900</p>
+        <p class="discount">Discount: 10%</p>
+    </div>
+    <div class="gallery-item">
+        <img src="https://i.ibb.co/bXQ51k7/waldemar-t-Dlg-OYNRp-Jc-unsplash.jpg" alt="Fashionable Outfit 8">
+        <p>Fashionable Outfit 8</p>
+        <p class="price">Price: ₹2700</p>
+        <p class="discount">Discount: 15%</p>
+    </div>
+    <div class="gallery-item">
+        <img src="https://i.ibb.co/5GzMYBR/elijah-mears-3-I7j-RCgy-YWU-unsplash.jpg" alt="Fashionable Outfit 9">
+        <p>Fashionable Outfit 9</p>
+        <p class="price">Price: ₹3600</p>
+        <p class="discount">Discount: 5%</p>
+    </div>
+    <div class="gallery-item">
+        <img src="https://i.ibb.co/98rf8cH/joan-pinnick-ASjp-Do5n-Gms-unsplash.jpg" alt="Fashionable Outfit 10">
+        <p>Fashionable Outfit 10</p>
+        <p class="price">Price: ₹3800</p>
+        <p class="discount">Discount: 12%</p>
+    </div>
+
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Planet Fashion. All rights reserved.</p>
+    </footer>
+</body>
+</html>
